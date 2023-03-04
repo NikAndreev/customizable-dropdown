@@ -11,44 +11,48 @@
 <body>
 
 	<div class="wrapper">
+		<h3>Дропдаун</h3>
 		<div class="dropdown" data-dropdown>
 			<button class="dropdown__header" data-dropdown-header>Действия</button>
 			<ul class="dropdown__list" data-dropdown-list>
 				<li class="dropdown__item">
-					<button class="dropdown__btn">Посмотреть</button>
+					<button class="dropdown__btn" data-dropdown-item>Посмотреть</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn">Копировать</button>
+					<button class="dropdown__btn" data-dropdown-item>Копировать</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn dropdown__btn--black">Опубликовать</button>
+					<button class="dropdown__btn" data-dropdown-item>Опубликовать</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn dropdown__btn--red">Удалить</button>
+					<button class="dropdown__btn dropdown__btn--red" data-dropdown-item>Удалить</button>
+				</li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>Селект</h3>
+		<div class="dropdown" data-select>
+			<input type="hidden" data-select-input>
+			<button class="dropdown__header" data-select-header></button>
+			<ul class="dropdown__list" data-select-list>
+				<li class="dropdown__item">
+					<button class="dropdown__btn" disabled data-select-item data-value="" data-text="Выберите город">Выберите город</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn">Посмотреть</button>
+					<button class="dropdown__btn" data-select-item data-value="Moscow" data-text="Москва">Москва</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn">Копировать</button>
+					<button class="dropdown__btn" data-select-item data-value="Saint Petersburg" data-text="Санкт-Петербург">Санкт-Петербург</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn dropdown__btn--black">Опубликовать</button>
+					<button class="dropdown__btn" data-select-item data-value="Ekaterinburg" data-text="Екатеринбург">Екатеринбург</button>
 				</li>
 				<li class="dropdown__item">
-					<button class="dropdown__btn dropdown__btn--red">Удалить</button>
-				</li>
-				<li class="dropdown__item">
-					<button class="dropdown__btn">Посмотреть</button>
-				</li>
-				<li class="dropdown__item">
-					<button class="dropdown__btn">Копировать</button>
-				</li>
-				<li class="dropdown__item">
-					<button class="dropdown__btn dropdown__btn--black">Опубликовать</button>
-				</li>
-				<li class="dropdown__item">
-					<button class="dropdown__btn dropdown__btn--red">Удалить</button>
+					<button class="dropdown__btn" data-select-item data-value="Omsk" data-text="Омск">Омск</button>
 				</li>
 			</ul>
 		</div>
